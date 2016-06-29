@@ -10,5 +10,10 @@ $ npm install
 
 To run script, run the following with a FASTA text file 
 ```
-$ node shortestSuperstring.js [relative path to FASTA test file]
+$ npm run SS [relative path to FASTA test file]
+```
+
+To run tests, run the following
+```
+$ npm test
 ```

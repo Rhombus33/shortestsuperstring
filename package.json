@@ -4,12 +4,12 @@
   "description": "",
   "main": "shortestSuperstring.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "SS": "node src/shortestSuperstring.js",
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.1",
-    "fs": "0.0.2"
+    "fs": "0.0.2",
   }
 }
