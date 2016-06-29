@@ -1,0 +1,6 @@
+>Diamond_001
+ATTAGACCTG
+>Diamond_002
+CCTGCCGGAA
+>Diamond_003
+AGACCTGCCG

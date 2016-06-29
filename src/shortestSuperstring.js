@@ -1,8 +1,11 @@
 const helpers = require('./helpers.js');
 const Node = require('./node_class.js');
 
-function shortestSuperstring() {
-  helpers.readSequencesToArray().then(sequences => {
+function shortestSuperstring(testfilepath) {
+  return helpers.readSequencesToArray(testfilepath).then(sequences => {   
+    
+    // return empty string if file is empty
+    if (sequences === null) return '';
 
     // create a Node for each sequence in the array
     let sequenceNodes = sequences.map((sequence, index, array) => {
@@ -15,9 +18,13 @@ function shortestSuperstring() {
         helpers.setDirectedEdge(sequenceNodes[i], sequenceNodes[j]);
       }
     }
-    
-    // assemble and save superstring to text file
-    helpers.writeToFile('results.txt', helpers.assembleSuperstring(sequenceNodes));
+    // assemble superstring
+    return helpers.assembleSuperstring(sequenceNodes);
+  })
+  .then(superstring => {
+
+    // save superstring to text file
+    return helpers.writeToFile('results.txt', superstring);
 
   })
   .catch(e => {
@@ -25,4 +32,9 @@ function shortestSuperstring() {
   });
 }
 
-shortestSuperstring();
+// if the script is not being run by a test, invoke the function immediately
+if (module.parent === null) {
+  shortestSuperstring();
+}
+
+module.exports = shortestSuperstring;

@@ -8,12 +8,12 @@
 $ npm install
 ```
 
-To run script, run the following with a FASTA text file 
+To run script: 
 ```
 $ npm run SS [relative path to FASTA test file]
 ```
 
-To run tests, run the following
+To run tests:
 ```
 $ npm test
 ```

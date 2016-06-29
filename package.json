@@ -1,15 +1,18 @@
 {
-  "name": "rosalind",
+  "name": "shortestSuperstring",
   "version": "1.0.0",
   "description": "",
   "main": "shortestSuperstring.js",
   "scripts": {
     "SS": "node src/shortestSuperstring.js",
+    "test": "mocha spec/shortestSuperstring.test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.1",
+    "chai": "^3.5.0",
     "fs": "0.0.2",
+    "mocha": "^2.5.3"
   }
 }
