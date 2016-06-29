@@ -1,7 +1,7 @@
 # shortestsuperstring
 
 ## Usage
-1. Clone the repo
+1. Clone repo and navigate to folder in terminal
 2. Ensure you have [Node.js](https://nodejs.org) version 6 or higher installed. Then run the following to install dependencies:
 
 ```
