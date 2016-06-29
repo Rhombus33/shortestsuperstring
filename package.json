@@ -1,0 +1,15 @@
+{
+  "name": "rosalind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shortestSuperstring.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "fs": "0.0.2"
+  }
+}
